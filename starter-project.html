@@ -70,16 +70,15 @@
         <img
           class="absolute -z-10 h-96 w-32 hidden md:block dark:hidden"
           src="images/showcase-design.png"
-          alt=""npm audit
-        />
+          alt=""npm audit/>
         </section>
     </header>
 
     <main>
       <!-- -------------------------- About -->
       <section class="component *:flex *:flex-col *:gap-y-5 md:*:gap-y-2">
-        <div class="text-left md:text-center mx-auto">
-          <h2 class="font-bold text-2xl mb-5">A New Take on Finance</h2>
+        <div class="text-left md:text-center mx-auto md:w-1/2">
+          <h2 class="font-bold text-2xl">A New Take on Finance</h2>
           <p>
             We are a team of passionate people whose goal is to improve
             everyone's life through disruptive products. We build great products
@@ -87,73 +86,78 @@
           </p>
         </div>
 
-        <div>
-          <div>
-            <div>
-              <h3>More About Us</h3>
-              <p>Great for individuals and Businesses.</p>
+        <div class="md:flex md:flex-row-reverse *:basis-2/4">
+          <div class="*:space-y-5 flex flex-col self-center">
+            <div class="space-y-3 mb-8 flex flex-col">
+              <h3 class="text-blue font-bold text-xl">More About Us</h3>
+              <p class="text-orange">Great for individuals and Businesses.</p>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
                 perspiciatis mollitia ratione delectus vitae repellat, sequi aut
-                voluptatibus adipisci natus corporis maiores .
+                voluptatibus adipisci natus corporis maiores.
               </p>
             </div>
 
-            <div>
-              <div>
-                <figure>
-                  <img src="images/tick.png" alt="" />
+            <div class="flex flex-col">
+              <div class="space-y-2 md:flex md:gap-2 md:flex-row">
+                <figure class="">
+                  <img src="images/tick.png" class="md:w-32 lg:w-36 xl:w-auto" alt="" />
                 </figure>
-                <h4>Comprehensive Finance</h4>
+                <div>
+                <h4 class="text-orange font-semibold text-lg">Comprehensive Finance</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
               </div>
 
-              <div>
+              <div class="space-y-2 md:flex md:gap-2 md:flex-row">
                 <figure>
-                  <img src="images/tick.png" alt="" />
+                  <img src="images/tick.png" class="md:w-32 lg:w-36 xl:w-auto" alt="" />
                 </figure>
-                <h4>Support is just a call away</h4>
+                <div>
+                <h4 class="text-orange font-semibold text-lg">Support is just a call away</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
               </div>
 
-              <div>
-                <figure>
-                  <img src="images/tick.png" alt="" />
+              <div class="space-y-2 md:flex md:gap-2 md:flex-row">
+                <figure class="">
+                  <img src="images/tick.png" class="md:w-32 lg:w-36 xl:w-auto" alt="" />
                 </figure>
-                <h4>Say goodbye to paperwork</h4>
+                <div>
+                <h4 class="text-orange font-semibold text-lg">Say goodbye to paperwork</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
               </div>
             </div>
           </div>
 
-          <figure>
-            <img src="images/about.svg" alt="" />
-            <img src="images/about-design.png" alt="" />
+          <figure class="relative">
+            <img src="images/about.svg" alt="" class="md:[transform:rotateY(0.5turn)]"/>
+            <img src="images/about-design.png" alt="" class="absolute left-0 top-1/4 -z-10 hidden md:block h-96 w-1/3 dark:hidden"/>
           </figure>
         </div>
       </section>
 
       <!-- -------------------------- Features -->
-      <section>
-        <div>
-          <h2>Different Finances for Different Needs</h2>
+      <section class="component bg-primary-300 dark:bg-primary-900 py-14">
+        <div class="text-center">
+          <h2 class="text-2xl font-bold">Different Finances for Different Needs</h2>
           <p>Lorem ipsum dolor sit amet elit adipisicing elit.</p>
         </div>
 
-        <div>
-          <div>
+        <div class="flex flex-wrap md:grid md:grid-cols-2 md:mx-auto xl:flex xl:flex-wrap xl:justify-center items-center py-8 gap-5 mt-10">
+          <div class="bg-white dark:bg-transparent p-5 rounded text-center space-y-3 w-full md:w-max dark:border-2 dark:border-primary-500 dark:bg-primary-900">
             <figure>
-              <img src="images/home-finance.svg" alt="" />
+              <img src="images/home-finance.svg" class="size-28 rounded-full mx-auto bg-blue/10 p-4 dark:bg-transparent" class="" alt=""/>
             </figure>
 
-            <h4>Home Finance</h4>
-
-            <p>Lorem ipsum dolor, sit amet adipisicing elit.</p>
+            <h4 class="font-bold">Home Finance</h4>
+            <p class="dark:text-primary-600">Lorem ipsum dolor, sit amet adipisicing elit.</p>
           </div>
 
-          <div>
+          <div class="bg-white dark:bg-transparent p-5 rounded text-center space-y-3 w-full md:w-max dark:border-2 dark:border-primary-500 dark:bg-primary-900">
             <figure>
-              <img src="images/car-finance.svg" alt="" />
+              <img src="images/car-finance.svg" class="size-28 rounded-full mx-auto bg-orange/10 p-4 dark:bg-transparent" alt="" />
             </figure>
 
             <h4>Car Finance</h4>
@@ -161,9 +165,9 @@
             <p>Lorem ipsum dolor, sit amet adipisicing elit.</p>
           </div>
 
-          <div>
+          <div class="bg-white dark:bg-transparent p-5 rounded text-center space-y-3 w-full md:w-max dark:border-2 dark:border-primary-500 dark:bg-primary-900">
             <figure>
-              <img src="images/life-finance.svg" alt="" />
+              <img src="images/life-finance.svg" class="size-28 rounded-full mx-auto bg-green/10 p-4 dark:bg-transparent" alt="" />
             </figure>
 
             <h4>Life Finance</h4>
@@ -171,9 +175,9 @@
             <p>Lorem ipsum dolor, sit amet adipisicing elit.</p>
           </div>
 
-          <div>
+          <div class="bg-white dark:bg-transparent p-5 rounded text-center space-y-3 w-full md:w-max dark:border-2 dark:border-primary-500 dark:bg-primary-900">
             <figure>
-              <img src="images/business-finance.svg" alt="" />
+              <img src="images/business-finance.svg" class="size-28 rounded-full mx-auto bg-blue/10 p-4 dark:bg-transparent" alt="" />
             </figure>
 
             <h4>Business Finance</h4>
@@ -181,9 +185,9 @@
             <p>Lorem ipsum dolor, sit amet adipisicing elit.</p>
           </div>
 
-          <div>
+          <div class="bg-white dark:bg-transparent p-5 rounded text-center space-y-3 w-full md:w-max dark:border-2 dark:border-primary-500 dark:bg-primary-900">
             <figure>
-              <img src="images/travel-finance.svg" alt="" />
+              <img src="images/travel-finance.svg" class="size-28 rounded-full mx-auto bg-blue/10 p-4 dark:bg-transparent" alt="" />
             </figure>
 
             <h4>Travel Finance</h4>
@@ -191,9 +195,9 @@
             <p>Lorem ipsum dolor, sit amet adipisicing elit.</p>
           </div>
 
-          <div>
-            <figure>
-              <img src="images/other-finance.svg" alt="" />
+          <div class="bg-white dark:bg-transparent p-5 rounded text-center space-y-3 w-full md:w-max dark:border-2 dark:border-primary-500 dark:bg-primary-900">
+            <figure >
+              <img src="images/other-finance.svg" class="size-28 rounded-full bg-blue/10 p-4 mx-auto dark:bg-transparent" alt="" />
             </figure>
 
             <h4>Other Finance</h4>
@@ -204,40 +208,40 @@
       </section>
 
       <!-- -------------------------- Process -->
-      <section>
-        <div>
-          <h2>Simplified Process</h2>
+      <section class="component *:text-center  items-center">
+        <div class="space-y-6">
+          <h2 class="font-bold text-2xl">Simplified Process</h2>
           <p>Easy as One, Two, Three</p>
         </div>
 
-        <div>
-          <div>
-            <p>1</p>
-            <h4>Step One</h4>
+        <div >
+          <div class="bg-green/50 dark:bg-transparent dark:border-2 dark:border-green/50 w-max rounded p-8 space-y-5">
+            <p class="bg-green/50 dark:bg-transparent dark:border-2 dark:border-green/50 rounded-full p-2 w-12 h-12 flex items-center justify-center">1</p>
+            <h4 class="font-semibold text-lg">Step One</h4>
 
-            <p>Lorem ipsum dolor, sit amet adipisicing elit.</p>
+            <p class="dark:text-primary-600 md:w-48 lg:w-52 xl:w-full">Lorem ipsum dolor, sit amet adipisicing elit.</p>
           </div>
 
           <figure>
-            <img src="images/after-blue.png" alt="" />
+            <img src="images/after-blue.png" class="rotate-90 md:rotate-0 " alt="" />
           </figure>
 
-          <div>
-            <p>2</p>
-            <h4>Step Two</h4>
+          <div class="bg-blue/50 dark:bg-transparent dark:border-2 dark:border-blue/50 w-max rounded p-8 space-y-5">
+            <p class="bg-blue/50 dark:bg-transparent dark:border-2 dark:border-blue/50 rounded-full p-2 w-12 h-12 flex items-center justify-center">2</p>
+            <h4 class="font-semibold text-lg">Step Two</h4>
 
-            <p>Lorem ipsum dolor, sit amet adipisicing elit.</p>
+            <p class="dark:text-primary-600 md:w-48 lg:w-52 xl:w-full">Lorem ipsum dolor, sit amet adipisicing elit.</p>
           </div>
 
           <figure>
-            <img src="images/after-pink.png" alt="" />
+            <img src="images/after-pink.png" class="rotate-90 md:rotate-0" alt="" />
           </figure>
 
-          <div>
-            <p>3</p>
-            <h4>Step Three</h4>
+          <div class="bg-orange/50 dark:bg-transparent dark:border-2 dark:border-orange/50 w-max rounded p-8 space-y-5">
+            <p class="bg-orange/50 dark:bg-transparent dark:border-2 dark:border-orange/50 rounded-full p-2 w-12 h-12 flex items-center justify-center">3</p>
+            <h4 class="font-semibold text-lg">Step Three</h4>
 
-            <p>Lorem ipsum dolor, sit amet adipisicing elit.</p>
+            <p class="dark:text-primary-600 md:w-48 lg:w-52 xl:w-full">Lorem ipsum dolor, sit amet adipisicing elit.</p>
           </div>
         </div>
       </section>
